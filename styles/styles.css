@@ -1,0 +1,10 @@
+:root{
+    --background-color: #00030C;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --button-color: #167BF7;
+}
+
+body{
+    background-color: var(--background-color);
+}
