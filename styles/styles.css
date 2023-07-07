@@ -1,25 +1,164 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+:root {
     --background-color: #00030C;
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --button-color: #167BF7;
+    -button-principal-selecionado: #0f5bb9;
+    --fonte-geral: 'Inter', sans-serif;
 }
 
-body{
-    background-color : var(--background-color);
+body {
+    background-color: var(--background-color);
     color: var(--branco-principal);
+    font-family: var(--fonte-geral);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-.principal{
+.principal {
     background-image: url("/assets/Background.png");
     background-size: contain;
     background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
 }
-.container{
+
+.container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+
+}
+
+.botao_assinatura_combo {
+    display: block;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--branco-principal);
+    align-items: center;
+    justify-content: center;
+    padding: 16.0px 0;
+    gap: 16px;
+    font-family: var(--fonte-geral);
+    font-size: 1.0rem;
+    text-align: center;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.botao_assinatura_combo:hover {
+    background-color: #0f5bb9;
+    border: 2px solid var(--button_principal-selecionado);
+    font-weight: 700;
+}
+
+.botao_aluraplus {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.botao_aluraplus:hover {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+    font-weight: 700;
+}
+
+.container__aviso {
+    font-family: var(--fonte-geral);
+    color: var(--cinza-secundario);
+    font-size: 0.75rem;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+    zoom: 1;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 75%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 20em;
+    margin-bottom: 0.8em;
+}
+
+.descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.descricao__texto {
+    font-size: 1rem;
+    color: var(--cinza-secundario);
+}
+
+.botao_tres {
+    width: 26%;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos_lista{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+
+}
+.dispositivos_titulo{
+    font-size: 3rem;
+    color:var(--branco-principal)
+}
+.lista_item{
+    font-size: 2rem;
+    color:var(--branco-principal)
+    
+}
+.rodape{
+    text-align: center;
+}
+.rodape_lista{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 6em 2em;
+}
+.rodape_texto{
+    font-size:1rem;
+    text-decoration: none;
+    color:var(--branco-principal);
+}
+.rodape_texto:hover{
+ color:var(--button-color);
+ font-weight: 700;
+
+}
+.rodape_texto_direitos{
+    color:var(--cinza-secundario);
+}
+.rodape_logo{
+    margin: 3em;
 }
